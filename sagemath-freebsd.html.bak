@@ -4,7 +4,7 @@
 
 <h1>How to install SageMath in FreeBSD? </h1>
 
-<p>As it is known, SageMath is not available in the FreeBSD repository. But there is a fix! Just like WSL for Windows, we have something similar for FreeBSD called the <a href="https://docs.freebsd.org/en/books/handbook/linuxemu/"> Linux Binary Compatibility</a>. It simply uses the chroot technology to run Linux binaries in the FreeBSD environment. This is the beauty of POSIX standard. I would recommend installing Ubuntu using the "debootstrap" command on the empty folder /compat/ubuntu. </p>
+<p>As it is known, SageMath is not available in the FreeBSD repository. But there is a fix! Just like WSL for Windows, we have something similar for FreeBSD called the <a href="https://docs.freebsd.org/en/books/handbook/linuxemu/"> Linux Binary Compatibility</a>. It simply uses the chroot techology to run Linux binaries in the FreeBSD environment. This is the beauty of POSIX standard. I would recommend installing Ubuntu using the "debootstrap" command on the empty folder /compat/ubuntu. </p>
 
 <p> After following the instructions there, you will most likely run the command "chroot /compat/ubuntu /bin/bash" which will bring you to the Linux substation and you can modify your home folder there! Then you run as root "apt-get install  sagemath sagemath-doc-en sagemath-jupyter". The installation will probably take up 5GB of space. You will also need to install a browser. For instance "apt install firefox". Afterwhich you will run </p>
 
