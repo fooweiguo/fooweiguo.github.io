@@ -16,11 +16,11 @@
 
 <p> Comme vous le savez, l'installation directe de SageMath dans FreeBSD est impossible, car ce logiciel n'existe pas dans le depôt logiciel de FreeBSD. Pour contourner ce problème, il suffit d'installer Linux dans FreeBSD en suivant les instructions trouvées ici <a href="https://docs.freebsd.org/en/books/handbook/linuxemu/"> Linux Binary Compatibility</a>. Je conseille fortement installer Ubuntu avec "debootstrap" dans un dossier vide, par exemple, /compat/ubuntu </p>
 
-<p> Dès que vous avez installé le Linux, lancer Ubuntu avec "chroot /compat/ubuntu /bin/bash", qui vous emmène dans le Linux substation où vous pouvez modifier le contenu de votre dossier "home". Et puis, tapez "apt-get install  sagemath sagemath-doc-en sagemath-jupyter" pour installer SageMath, qui va prendre 5GB de stockage. Ensuite, installez firefox. Pour utiliser SageMath, tapez </p> 
+<p> Dès que vous avez installé le Linux, lancer Ubuntu avec "chroot /compat/ubuntu /bin/bash", qui vous emmène dans le Linux substation où vous pouvez modifier le contenu de votre dossier "home". Et puis, tapez "apt-get install  sagemath sagemath-doc-en sagemath-jupyter" pour les installer, qui va prendre 5GB de stockage. Ensuite, installez firefox. Pour utiliser SageMath, tapez </p> 
 
 <p> sage -n jupyter --allow-root </p> 
 
-<p> qui va vous donner l'adresse IP pour accéder à SageMath. Vous devez mettre cette adresse dans votre navigateur préferé dans le machine hôte (qui est important! car xorg ne peut pas être lancé dans le Linux Substation), et voilà, vous auriez un SageMath pour faire les calculs! Félicitations! </p>
+<p> qui va vous donner l'adresse IP pour y accéder. Vous devez mettre cette adresse dans votre navigateur préferé dans le machine hôte (qui est important! car xorg ne peut pas être lancé dans le Linux Substation), et voilà, vous auriez un SageMath pour faire les calculs! Félicitations! </p>
 
 </body>
 </html>
